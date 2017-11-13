@@ -1,0 +1,13 @@
+{
+  "id": "threema",
+  "name": "Threema",
+  "version": "1.0.0",
+  "description": "Threema",
+  "main": "index.js",
+  "author": "Anna Damm <Arany@users.noreply.github.com>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://web.threema.ch",
+    "hasNotificationSound": true
+  }
+}
