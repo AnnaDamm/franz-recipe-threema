@@ -3,15 +3,34 @@ header, #status-bar {
 }
 
 div#main-wrapper {
-    position: absolute;
-    height: 100%;
+    height: 100% !important;
     width: 100%;
     margin: 0;
     max-width: 100% !important;
+    max-height: 100% !important;
 }
+
 div#main {
+    box-shadow: none;
+}
+
+img#background-image {
+    display: none;
+}
+
+body:not(.status-ok) footer li a {
+    color: black !important;
+}
+
+body.status-ok footer {
     position: absolute;
-    height: 100%;
+    top: 0;
     width: 100%;
-    border-radius: 0;
+    z-index: 999999;
+    margin-top: 5px;
+    height: auto;
+}
+
+body:not(.expanded) #messenger {
+    height: 100% !important;
 }
