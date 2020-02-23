@@ -32,6 +32,10 @@ body.status-ok footer {
     height: auto;
 }
 
+body.status-ok:not(.franz-messenger-home) footer {
+    display: none;
+}
+
 body:not(.expanded) #messenger {
     height: 100% !important;
 }
