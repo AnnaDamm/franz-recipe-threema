@@ -12,6 +12,7 @@ div#main-wrapper {
 
 div#main {
     box-shadow: none;
+    border-radius: 0;
 }
 
 img#background-image {
