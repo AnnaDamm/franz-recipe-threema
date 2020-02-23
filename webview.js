@@ -8,9 +8,11 @@ module.exports = Franz => {
         // waiting for AngularJS to be fully loaded
         angular.element(() => {
             const statusController = angular.element(document.querySelector('html')).controller();
+            const stateService = statusController.webClientService.stateService;
 
-            Franz.loop(() => {
-                Franz.setBadge(statusController.unreadCount)
+            // listen to changes in unreadCount
+            stateService.evtUnreadCountChange.attach(count => {
+                Franz.setBadge(count)
             });
         });
     });
